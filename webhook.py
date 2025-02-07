@@ -50,7 +50,8 @@ def whatsapp_webhook():
 
     return str(response)
 
-# Serve the index.html when the home route is accessed
+# ✅ **Serve index.html at `/` for GET requests**
+@app.route('/', methods=['GET'])
 @app.route('/index', methods=['GET'])
 def index():
     return render_template('index.html')
