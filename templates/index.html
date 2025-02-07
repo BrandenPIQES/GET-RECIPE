@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zwiliwa Chatbot</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Albert Sans', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("bg.jpg");
+            background-size: cover;
+            background-position: center;
+            filter: blur(8px);
+            z-index: -1;
+        }
+
+        .for_nerds {
+            color: rgb(60, 3, 3);
+            font-size: 20px;
+            text-decoration: none;
+            font-weight: 500;
+
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            flex: 1;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        
+        .header h1 {
+            font-size: 70px;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        
+        .content {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .steps {
+            margin: 2rem 0;
+        }
+        
+        .step {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+        
+        .step h3 {
+            font-size: 35px;
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        
+        .qr-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        .qr-code {
+            max-width: 200px;
+            height: auto;
+        }
+        
+        .tip {
+            background-color: #e3f2fd;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-top: 2rem;
+        }
+
+        .footer {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            margin-top: 2rem;
+        }
+
+        .footer p {
+            margin: 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🍳 Zwiliwa Chatbot</h1>
+            <p>Get personalized recipe recommendations powered by AI</p>
+            <br>
+            <a class="for_nerds" href="https://github.com/BrandenPIQES/GET-RECIPE">code for nerds🤓</a>
+        </div>
+        
+        <div class="content">
+            <div class="steps">
+                <div class="step">
+                    <h3>Step 1: Scan the QR Code</h3>
+                    <p>Use your mobile device to scan the QR code below to start chatting with our recipe bot.</p>
+                
+                </div>
+                
+                <div class="qr-container">
+                    <img src="/zwiliwa.png" alt="QR Code" class="qr-code">
+                </div>
+                
+                <div class="step">
+                    <h3>Step 2: Start the Conversation</h3>
+                    <p>Send the pre-written message then Type "hungry" to get a recipe recommendation from our AI-powered chatbot.</p>
+                </div>
+                
+                <div class="step">
+                    <h3>Step 3: Get Your Perfect Recipe</h3>
+                    <p>Don't like the suggested recipe? Simply reply with "No" to get another recommendation until you find the perfect meal!</p>
+                </div>
+            </div>
+            
+            <div class="tip">
+                <strong>💡 Pro Tip:</strong> Save this chat to quickly get recipe ideas whenever you're hungry!
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Powered by <a href="https://netsh.io" target="_blank">netsh</a></p>
+    </footer>
+</body>
+</html>

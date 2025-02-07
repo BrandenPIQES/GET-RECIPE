@@ -1,7 +1,7 @@
 # @author: Phathutshedzo Netshitangani
 
 
-from flask import Flask, request
+from flask import Flask, request, render_template
 from twilio.twiml.messaging_response import MessagingResponse
 import requests
 import os
@@ -49,6 +49,11 @@ def whatsapp_webhook():
         response.message('Thank you for the message, do let me know if you need more recipes :)')
 
     return str(response)
+
+# Serve the index.html when the home route is accessed
+@app.route('/index', methods=['GET'])
+def index():
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run()
