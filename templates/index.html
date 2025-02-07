@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/templates/zwiliwa_zwi.png" type="image/x-icon">
-    <link rel="icon" href="/templates/zwiliwa_zwi.png" type="image/x-icon">
-    <link rel="shortcut icon" href="/templates/zwiliwa_zwi.png" type="image/x-icon">
+    <link rel="icon" href="{{ url_for('static', filename='images/zwiliwa_zwi.png') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/zwiliwa_zwi.png') }}" type="image/x-icon">
+
     <title>zwiliwa Chatbot</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;700&display=swap');
@@ -29,7 +29,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url("bg.jpg");
+            background-image: url("{{ url_for('static', filename='images/bg.jpg') }}");
             background-size: cover;
             background-position: center;
             filter: blur(8px);
@@ -148,7 +148,7 @@
                 </div>
                 
                 <div class="qr-container">
-                    <img src="/templates/zwiliwa.png" alt="QR Code" class="qr-code">
+                    <img src="{{ url_for('static', filename='images/zwiliwa.png') }}" alt="Recipe">
                 </div>
                 
                 <div class="step">
