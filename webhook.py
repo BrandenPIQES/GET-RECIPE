@@ -39,7 +39,7 @@ def whatsapp_webhook():
     response = MessagingResponse()
 
     # keeps on recommending until you say YES
-    if 'hungry' in message or 'no' in message:
+    if 'hungry' in message.lower() or 'no' in message.lower():
         card_url = get_random_recipe()
         if card_url:
             response.message('Here is a recipe').media(card_url)
