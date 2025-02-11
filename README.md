@@ -10,7 +10,7 @@ Get recipe uses Twillio Chatbot and the spoonacular API to recommend recipe on a
 ## Usage or Installation
 Simply go to : https://get-recipe.onrender.com/  or 
 
-###Step 01: Scan the QR Code below
+**Step 01:** Scan the QR Code below
 Use your mobile device to scan the QR code below to start chatting with our recipe bot.
 Remember "hungry" for a recipe request and "No" if you don't like the current recipe!🫡
 
