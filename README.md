@@ -1,5 +1,11 @@
 # GET RECIPE - ZWILIWA CHATBOT
-Get recipe uses Twillio Chatbot and the spoonacular API to recommend recipe on a promt, "hungry". If the recipe is not pleasing one can get another one by simply replying "No" until the desired one is found.
+Get recipe uses Twillio Chatbot and the spoonacular API to recommend recipe on a promt, "hungry".
+
+## Used tech stack, apps, and services
+- HTML, CSS, and Python Flask
+- Twilio
+- Spoonacular
+- WhatsApp
 
 Scan the QR Code below to start a conversation. Remember "hungry" for a recipe request and "No" if you don't like the current recipe!🫡
 
